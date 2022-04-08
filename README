@@ -1,0 +1,21 @@
+Tema 1 APD
+
+Stamate Robert Andrei 335CC
+______________________________________________________________________________
+
+tema1_par.c:
+        Am creat thread-urile cu functia "run_genetic_algorithm", am
+        initializat bariera si toate datele din structura partajata de toate 
+        firele de executie.
+genetic_algorithm.c:
+        compute_fitness_function( ... ):
+            Am impartit vectorul objects in mod (aproximativ) 
+            egal cu ajoturl formulelor din laboratorul 1 (Hint 2).
+        
+        *run_genetic_algorithm( ... ):
+            Am paralelizat for-urile de la: crearea generatiei initiale,
+            selectia "elitei", mutatia primilor 20% de copii si mutatia
+            urmatorilor 20% de copii la fel ca in functia prezentata anterior.
+
+            Am inlocuit sortarea qsort cu functia de mergeSort paralel
+            implementata in laboratorul 3.
